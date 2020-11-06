@@ -1,0 +1,41 @@
+<main class="main-content">
+  <div class="container">
+    <div class="page">
+      <div class="breadcrumbs">
+        <a href="javascript:void(0)" (click)="goBack()">Back to List</a>
+        <span>{{modelmovie.title}}</span>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="movie-poster"><img src="{{modelmovie.poster}}" alt="#"></figure>
+          </div>
+          <div class="col-md-6">
+            <h2 class="movie-title">{{modelmovie.title}}</h2>
+            <div class="movie-summary">
+              <p>{{modelmovie.plot}} </p>
+            </div>
+            <ul class="movie-meta">
+              <li><strong>Rating:</strong>
+                <div class="star-rating" title="Rated {{modelmovie.imdbRating}} out of 10"><span style="width:80%"><strong class="rating">{{modelmovie.imdbRating}}</strong> out of 10</span></div>
+              </li>
+              <li><strong>Length:</strong> 98 min</li>
+              <li><strong>Premiere:</strong> 22 March 2013 (USA)</li>
+              <li><strong>Category:</strong> Animation/Adventure/Comedy</li>
+            </ul>
+
+            <ul class="starring">
+              <li><strong>Directors:</strong> Kirk de Mico (as Kirk DeMico). Chris Sanders</li>
+              <li><strong>Writers:</strong> Chris Sanders (screenplay), Kirk De Micco (screenplay)</li>
+              <li><strong>Stars:</strong> Nicolas Cage, Ryan Reynolds, Emma Stone</li>
+            </ul>
+          </div>
+        </div> <!-- .row -->
+        <div class="entry-content">
+          <p>Extra Space</p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .container -->
+</main>
